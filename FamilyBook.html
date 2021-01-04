@@ -1,0 +1,22 @@
+<html>
+<head> <title> Family Book </title> </head>
+<body>
+<center>
+<h1> Family Book </h1>
+<img id="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDL1GXDNFZsAtAr2-X70XYNL-CE41cThiDWg&usqp=CAU">
+<p id="name">Family</p>
+<button id="btn" onclick="change()" type=button>NEXT</button>
+<script>
+var familypictures=["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDL1GXDNFZsAtAr2-X70XYNL-CE41cThiDWg&usqp=CAU","https://cdn141.picsart.com/311411947078201.jpg?type=webp&to=min&r=640","https://cdn141.picsart.com/311411947078201.jpg?type=webp&to=min&r=640", "https://i.pinimg.com/originals/04/2c/32/042c32eb81347813ff83511187be7801.jpg"];
+var names=["Family","Mom","Daughter","Dad"];
+var i=0;
+function change()
+
+{
+ document.getElementById("image").src=familypictures[i];
+ document.getElementById("name").innerHTML=names[i];
+ i++;}
+</script>
+</center>
+</body>
+</html>
